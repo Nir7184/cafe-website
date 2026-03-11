@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a table at Brew Bliss Café. Reserve your spot for an unforgettable dining experience.">
+    <meta name="theme-color" content="#8B4513">
+    <title>Reservations - Brew Bliss Café</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <i class="fas fa-mug-hot"></i>
+                <span>Brew Bliss</span>
+            </a>
+            
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="reservation.html" class="nav-link active">Reservation</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="mobile-nav-footer d-lg-none">
+                    <div class="mobile-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="cart.html" class="cart-link" aria-label="View Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+                
+                <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon icon-moon"></i>
+                    <i class="fas fa-sun icon-sun"></i>
+                </button>
+                
+                <button class="header-toggle d-lg-none" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-aos="fade-up">Make a Reservation</h1>
+                <p data-aos="fade-up" data-aos-delay="100">Book your table for an unforgettable experience</p>
+                <nav class="breadcrumb-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="separator">/</li>
+                        <li class="active">Reservation</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section class="section reservation-section bg-white">
+            <div class="container">
+                <div class="reservation-grid">
+                    <!-- Reservation Form -->
+                    <div class="reservation-form-wrapper" data-aos="fade-right">
+                        <h2 class="mb-6">Book Your Table</h2>
+                        
+                        <form id="reservationForm" data-validate>
+                            <div class="form-group">
+                                <label class="form-label" for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="yourname@gmail.com" required pattern="[a-z0-9._%+-]+@gmail\.com$" title="Please enter a valid Gmail address (example: yourname@gmail.com)">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="9876543210" required pattern="[0-9]{10}" maxlength="10" title="Please enter exactly 10 digits">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="date">Date *</label>
+                                <input type="text" id="date" name="date" class="form-control" placeholder="Select date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="time">Time *</label>
+                                <input type="text" id="time" name="time" class="form-control" placeholder="Select time" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="guests">Number of Guests *</label>
+                                <select id="guests" name="guests" class="form-control" required>
+                                    <option value="">Select number of guests</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="7">7 People</option>
+                                    <option value="8">8+ People</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="occasion">Occasion (Optional)</label>
+                                <select id="occasion" name="occasion" class="form-control">
+                                    <option value="">Select occasion</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="date">Date Night</option>
+                                    <option value="business">Business Meeting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="requests">Special Requests (Optional)</label>
+                                <textarea id="requests" name="requests" class="form-control" rows="3" placeholder="Any dietary restrictions or special requests?"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-calendar-check"></i> Confirm Reservation
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Reservation Info -->
+                    <div class="reservation-info" data-aos="fade-left">
+                        <div class="info-card">
+                            <h4><i class="fas fa-info-circle"></i> Reservation Info</h4>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div class="info-content">
+                                    <h5>Opening Hours</h5>
+                                    <p>Monday - Sunday<br>8:00 AM - 10:00 PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-users"></i>
+                                <div class="info-content">
+                                    <h5>Party Size</h5>
+                                    <p>We accept reservations for up to 8 guests. For larger parties, please contact us directly.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-hourglass-half"></i>
+                                <div class="info-content">
+                                    <h5>Reservation Duration</h5>
+                                    <p>Tables are reserved for 2 hours. Please inform us if you need more time.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="info-content">
+                                    <h5>Need Help?</h5>
+                                    <p>Call us at <a href="tel:+919876543210">+91 98765 43210</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
+                            <p style="margin-bottom: 1rem;">123 MG Road, Mumbai, Maharashtra 400001</p>
+                            <a href="contact.html" class="btn btn-outline-primary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <i class="fas fa-mug-hot"></i>
+                            <span>Brew Bliss</span>
+                        </a>
+                        <p class="footer-description">Where warmth meets flavor. Experience the perfect blend of artisanal coffee and gourmet cuisine.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+                            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="reservation.html"><i class="fas fa-chevron-right"></i> Reservations</a></li>
+                            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 MG Road, Mumbai,<br>Maharashtra 400001</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hello@brewblisscafe.com">hello@brewblisscafe.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Sun: 8:00 AM - 10:00 PM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe for exclusive offers</p>
+                        <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Thank you for subscribing!', 'success');">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p class="footer-copyright">
+                        &copy; 2025 Brew Bliss Café. All rights reserved.
+                    </p>
+                    <ul class="footer-bottom-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/menu-cart-integrated.js"></script>
+    <script src="assets/js/forms.js"></script>
+</body>
+</html>
