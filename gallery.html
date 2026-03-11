@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our gallery of delicious food, cozy ambiance, and memorable moments at Brew Bliss Café.">
+    <meta name="theme-color" content="#8B4513">
+    <title>Gallery - Brew Bliss Café</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <i class="fas fa-mug-hot"></i>
+                <span>Brew Bliss</span>
+            </a>
+            
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="reservation.html" class="nav-link">Reservation</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="mobile-nav-footer d-lg-none">
+                    <div class="mobile-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="cart.html" class="cart-link" aria-label="View Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+                
+                <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon icon-moon"></i>
+                    <i class="fas fa-sun icon-sun"></i>
+                </button>
+                
+                <button class="header-toggle d-lg-none" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-aos="fade-up">Our Gallery</h1>
+                <p data-aos="fade-up" data-aos-delay="100">A visual journey through our culinary creations</p>
+                <nav class="breadcrumb-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="separator">/</li>
+                        <li class="active">Gallery</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section gallery-section bg-white">
+            <div class="container">
+                <!-- Filters -->
+                <div class="gallery-filters" data-aos="fade-up">
+                    <button class="gallery-filter active" data-filter="all">All</button>
+                    <button class="gallery-filter" data-filter="food">Food</button>
+                    <button class="gallery-filter" data-filter="drinks">Drinks</button>
+                    <button class="gallery-filter" data-filter="interior">Interior</button>
+                    <button class="gallery-filter" data-filter="events">Events</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <!-- Interior Images -->
+                    <div class="gallery-item wide" data-category="interior" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=400&fit=crop" alt="Cafe Interior">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Interior</span>
+                            <h3 class="gallery-title">Our Cozy Space</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="interior" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=400&h=400&fit=crop" alt="Seating">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Interior</span>
+                            <h3 class="gallery-title">Comfortable Seating</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="interior" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=400&h=400&fit=crop" alt="Coffee Bar">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Interior</span>
+                            <h3 class="gallery-title">Coffee Bar</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="interior" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=400&h=400&fit=crop" alt="Outdoor Seating">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Interior</span>
+                            <h3 class="gallery-title">Outdoor Patio</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="interior" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=400&h=400&fit=crop" alt="Cozy Corner">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Interior</span>
+                            <h3 class="gallery-title">Cozy Corner</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- Food Images -->
+                    <div class="gallery-item" data-category="food" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=400&fit=crop" alt="Pizza">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Food</span>
+                            <h3 class="gallery-title">Artisan Pizza</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=400&h=400&fit=crop" alt="Breakfast">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Food</span>
+                            <h3 class="gallery-title">Breakfast Spread</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item wide" data-category="food" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=400&fit=crop" alt="Buddha Bowl">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Food</span>
+                            <h3 class="gallery-title">Healthy Buddha Bowl</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=400&fit=crop" alt="Waffles">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Food</span>
+                            <h3 class="gallery-title">Belgian Waffles</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=400&h=400&fit=crop" alt="Burger">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Food</span>
+                            <h3 class="gallery-title">Gourmet Burger</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=400&h=400&fit=crop" alt="Pancakes">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Food</span>
+                            <h3 class="gallery-title">Fluffy Pancakes</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=400&fit=crop" alt="Cake">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Food</span>
+                            <h3 class="gallery-title">Chocolate Cake</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=400&fit=crop" alt="Salad">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Food</span>
+                            <h3 class="gallery-title">Fresh Salad</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- Drinks Images -->
+                    <div class="gallery-item tall" data-category="drinks" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&h=800&fit=crop" alt="Matcha Latte">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Drinks</span>
+                            <h3 class="gallery-title">Matcha Latte</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="drinks" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&h=400&fit=crop" alt="Cold Brew">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Drinks</span>
+                            <h3 class="gallery-title">Cold Brew</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="drinks" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=400&fit=crop" alt="Cappuccino">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Drinks</span>
+                            <h3 class="gallery-title">Latte Art</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="drinks" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=400&fit=crop" alt="Iced Coffee">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Drinks</span>
+                            <h3 class="gallery-title">Iced Coffee</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="drinks" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=400&fit=crop" alt="Smoothie">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Drinks</span>
+                            <h3 class="gallery-title">Berry Smoothie</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="drinks" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=400&fit=crop" alt="Hot Chocolate">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Drinks</span>
+                            <h3 class="gallery-title">Hot Chocolate</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="drinks" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=400&h=400&fit=crop" alt="Mojito">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Drinks</span>
+                            <h3 class="gallery-title">Fresh Mojito</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- Events Images -->
+                    <div class="gallery-item" data-category="events" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&h=400&fit=crop" alt="Event">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Events</span>
+                            <h3 class="gallery-title">Private Party</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=400&h=400&fit=crop" alt="Live Music">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Events</span>
+                            <h3 class="gallery-title">Live Music Night</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events" data-aos="fade-up">
+                        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=400&h=400&fit=crop" alt="Birthday">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Events</span>
+                            <h3 class="gallery-title">Birthday Celebration</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=400&fit=crop" alt="Wedding">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Events</span>
+                            <h3 class="gallery-title">Wedding Reception</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=400&h=400&fit=crop" alt="Friends">
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Events</span>
+                            <h3 class="gallery-title">Friends Gathering</h3>
+                            <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <i class="fas fa-mug-hot"></i>
+                            <span>Brew Bliss</span>
+                        </a>
+                        <p class="footer-description">Where warmth meets flavor. Experience the perfect blend of artisanal coffee and gourmet cuisine.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+                            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="reservation.html"><i class="fas fa-chevron-right"></i> Reservations</a></li>
+                            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 MG Road, Mumbai,<br>Maharashtra 400001</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hello@brewblisscafe.com">hello@brewblisscafe.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Sun: 8:00 AM - 10:00 PM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe for exclusive offers</p>
+                        <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Thank you for subscribing!', 'success');">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p class="footer-copyright">
+                        &copy; 2025 Brew Bliss Café. All rights reserved.
+                    </p>
+                    <ul class="footer-bottom-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/menu-cart-integrated.js"></script>
+    <script src="assets/js/gallery.js"></script>
+</body>
+</html>
