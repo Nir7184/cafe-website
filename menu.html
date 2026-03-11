@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our diverse menu featuring artisanal coffee, gourmet dishes, and delectable desserts at Brew Bliss Café.">
+    <meta name="theme-color" content="#8B4513">
+    <title>Our Menu - Brew Bliss Café</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <i class="fas fa-mug-hot"></i>
+                <span>Brew Bliss</span>
+            </a>
+            
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link active">Menu</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="reservation.html" class="nav-link">Reservation</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="order-history.html" class="nav-link">Orders</a></li>
+                </ul>
+                
+                <div class="mobile-nav-footer d-lg-none">
+                    <div class="mobile-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="cart.html" class="cart-link" aria-label="View Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+                
+                <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon icon-moon"></i>
+                    <i class="fas fa-sun icon-sun"></i>
+                </button>
+                
+                <button class="header-toggle d-lg-none" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 data-aos="fade-up">Our Menu</h1>
+                <p data-aos="fade-up" data-aos-delay="100">Discover a world of flavors crafted with passion</p>
+                <nav class="breadcrumb-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="separator">/</li>
+                        <li class="active">Menu</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="section bg-white">
+            <div class="container">
+                <!-- Filters -->
+                <div class="menu-filters" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="beverages">Beverages</button>
+                    <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+                    <button class="filter-btn" data-filter="mains">Main Course</button>
+                    <button class="filter-btn" data-filter="desserts">Desserts</button>
+                    <span class="results-count ms-auto">24 items</span>
+                </div>
+
+                <!-- Menu Grid -->
+                <div class="menu-grid">
+                    <!-- Beverages -->
+                    <div class="menu-item" data-category="beverages" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=500&h=300&fit=crop" alt="Cappuccino">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-chef-choice">Chef's Choice</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Signature Cappuccino</h3>
+                                <span class="menu-item-price">₹180</span>
+                            </div>
+                            <p class="menu-item-description">Rich espresso topped with silky steamed milk and artistic latte art.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 120 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="cappuccino-001"
+                                        data-name="Signature Cappuccino"
+                                        data-price="180"
+                                        data-category="beverages"
+                                        data-image="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-item-image">
+                            <img src="https://static01.nyt.com/images/2016/05/24/dining/24COOKING-COLD-BREWED-ICE-COFFEE2/24COOKING-COLD-BREWED-ICE-COFFEE2-videoSixteenByNineJumbo1600-v2.jpg" alt="Cold Brew">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Cold Brew Coffee</h3>
+                                <span class="menu-item-price">₹200</span>
+                            </div>
+                            <p class="menu-item-description">Slow-steeped for 20 hours, served over ice with a splash of milk.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 15 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="coldbrew-001"
+                                        data-name="Cold Brew Coffee"
+                                        data-price="200"
+                                        data-category="beverages"
+                                        data-image="https://static01.nyt.com/images/2016/05/24/dining/24COOKING-COLD-BREWED-ICE-COFFEE2/24COOKING-COLD-BREWED-ICE-COFFEE2-videoSixteenByNineJumbo1600-v2.jpg">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=500&h=300&fit=crop" alt="Matcha Latte">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-new">New</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Matcha Green Tea Latte</h3>
+                                <span class="menu-item-price">₹220</span>
+                            </div>
+                            <p class="menu-item-description">Premium Japanese matcha with steamed milk and a hint of vanilla.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 180 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="matcha-001"
+                                        data-name="Matcha Green Tea Latte"
+                                        data-price="220"
+                                        data-category="beverages"
+                                        data-image="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500&h=300&fit=crop" alt="Iced Caramel Macchiato">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-popular">Popular</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Iced Caramel Macchiato</h3>
+                                <span class="menu-item-price">₹240</span>
+                            </div>
+                            <p class="menu-item-description">Espresso with vanilla syrup, milk, and caramel drizzle over ice.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 250 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="caramel-macchiato-001"
+                                        data-name="Iced Caramel Macchiato"
+                                        data-price="240"
+                                        data-category="beverages"
+                                        data-image="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-item-image">
+                            <img src="https://honeywellbakes.com/wp-content/uploads/2022/10/4Q1A9267.jpg" alt="Hot Chocolate">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Belgian Hot Chocolate</h3>
+                                <span class="menu-item-price">₹200</span>
+                            </div>
+                            <p class="menu-item-description">Rich Belgian chocolate with steamed milk and whipped cream.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 320 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="hot-chocolate-001"
+                                        data-name="Belgian Hot Chocolate"
+                                        data-price="200"
+                                        data-category="beverages"
+                                        data-image="https://honeywellbakes.com/wp-content/uploads/2022/10/4Q1A9267.jpg">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500&h=300&fit=crop" alt="Berry Smoothie">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-vegetarian">Veg</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Mixed Berry Smoothie</h3>
+                                <span class="menu-item-price">₹260</span>
+                            </div>
+                            <p class="menu-item-description">Fresh strawberries, blueberries, and raspberries with yogurt.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 220 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="berry-smoothie-001"
+                                        data-name="Mixed Berry Smoothie"
+                                        data-price="260"
+                                        data-category="beverages"
+                                        data-image="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Breakfast -->
+                    <div class="menu-item" data-category="breakfast" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://www.rootsandradishes.com/wp-content/uploads/2017/08/avocado-toast-with-everything-bagel-seasoning-feat.jpg" alt="Avocado Toast">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-vegetarian">Veg</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Avocado Toast</h3>
+                                <span class="menu-item-price">₹280</span>
+                            </div>
+                            <p class="menu-item-description">Sourdough bread topped with smashed avocado, poached egg, and chili flakes.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 350 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="avocado-001"
+                                        data-name="Avocado Toast"
+                                        data-price="280"
+                                        data-category="breakfast"
+                                        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJp5YrtG1Ljphw5yFohz2rvSDL1YP4cr4l_w&s">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="breakfast" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&h=300&fit=crop" alt="Belgian Waffles">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Belgian Waffles</h3>
+                                <span class="menu-item-price">₹280</span>
+                            </div>
+                            <p class="menu-item-description">Crispy waffles with fresh berries, whipped cream, and maple syrup.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 450 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="waffles-001"
+                                        data-name="Belgian Waffles"
+                                        data-price="280"
+                                        data-category="breakfast"
+                                        data-image="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="breakfast" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-item-image">
+                            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2021/03/French-fries-b9e3e0c.jpg?resize=768,713" alt="French Fries">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-popular">Popular</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">French Fries</h3>
+                                <span class="menu-item-price">₹180</span>
+                            </div>
+                            <p class="menu-item-description">Crispy golden fries seasoned with sea salt and herbs, served with ketchup.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 380 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="fries-001"
+                                        data-name="French Fries"
+                                        data-price="180"
+                                        data-category="breakfast"
+                                        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoAYzd67lfwcWzaH4KUJUbbZHSbvDM2abM1w&s">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="breakfast" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=500&h=300&fit=crop" alt="Pancakes">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-popular">Popular</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Fluffy Pancakes</h3>
+                                <span class="menu-item-price">₹260</span>
+                            </div>
+                            <p class="menu-item-description">Stack of fluffy pancakes with maple syrup and fresh butter.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 480 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="pancakes-001"
+                                        data-name="Fluffy Pancakes"
+                                        data-price="260"
+                                        data-category="breakfast"
+                                        data-image="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="breakfast" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500&h=300&fit=crop" alt="French Toast">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-new">New</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">French Toast</h3>
+                                <span class="menu-item-price">₹240</span>
+                            </div>
+                            <p class="menu-item-description">Brioche bread soaked in vanilla custard, grilled and topped with berries.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 420 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="french-toast-001"
+                                        data-name="French Toast"
+                                        data-price="240"
+                                        data-category="breakfast"
+                                        data-image="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="breakfast" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=500&h=300&fit=crop" alt="Granola Bowl">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-vegetarian">Veg</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Granola Yogurt Bowl</h3>
+                                <span class="menu-item-price">₹220</span>
+                            </div>
+                            <p class="menu-item-description">Homemade granola with Greek yogurt, honey, and fresh fruits.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 320 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="granola-001"
+                                        data-name="Granola Yogurt Bowl"
+                                        data-price="220"
+                                        data-category="breakfast"
+                                        data-image="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Course -->
+                    <div class="menu-item" data-category="mains" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&h=300&fit=crop" alt="Truffle Pizza">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-popular">Popular</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Truffle Mushroom Pizza</h3>
+                                <span class="menu-item-price">₹450</span>
+                            </div>
+                            <p class="menu-item-description">Wood-fired pizza with wild mushrooms, truffle oil, and mozzarella.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 680 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="pizza-001"
+                                        data-name="Truffle Mushroom Pizza"
+                                        data-price="450"
+                                        data-category="mains"
+                                        data-image="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="mains" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=300&fit=crop" alt="Buddha Bowl">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-vegetarian">Veg</span>
+                                <span class="badge badge-new">New</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Buddha Bowl</h3>
+                                <span class="menu-item-price">₹380</span>
+                            </div>
+                            <p class="menu-item-description">Quinoa, roasted vegetables, avocado, chickpeas, and tahini dressing.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 420 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="buddha-001"
+                                        data-name="Buddha Bowl"
+                                        data-price="380"
+                                        data-category="mains"
+                                        data-image="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="mains" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&h=300&fit=crop" alt="Grilled Salmon">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Grilled Salmon</h3>
+                                <span class="menu-item-price">₹550</span>
+                            </div>
+                            <p class="menu-item-description">Atlantic salmon with lemon butter sauce, served with seasonal vegetables.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 480 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="salmon-001"
+                                        data-name="Grilled Salmon"
+                                        data-price="550"
+                                        data-category="mains"
+                                        data-image="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="mains" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=500&h=300&fit=crop" alt="Gourmet Burger">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-popular">Popular</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Gourmet Burger</h3>
+                                <span class="menu-item-price">₹380</span>
+                            </div>
+                            <p class="menu-item-description">Juicy beef patty with cheddar, caramelized onions, and special sauce.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 650 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="burger-001"
+                                        data-name="Gourmet Burger"
+                                        data-price="380"
+                                        data-category="mains"
+                                        data-image="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="mains" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=300&fit=crop" alt="Caesar Salad">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-vegetarian">Veg</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Caesar Salad</h3>
+                                <span class="menu-item-price">₹320</span>
+                            </div>
+                            <p class="menu-item-description">Crisp romaine lettuce with parmesan, croutons, and classic Caesar dressing.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 280 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="caesar-salad-001"
+                                        data-name="Caesar Salad"
+                                        data-price="320"
+                                        data-category="mains"
+                                        data-image="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="mains" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-item-image">
+                            <img src="https://www.budgetbytes.com/wp-content/uploads/2021/10/One-Pot-Veggie-Pasta-bowl-500x500.jpg" alt="Veg Pasta">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-vegetarian">Veg</span>
+                                <span class="badge badge-chef-choice">Chef's Choice</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Veg Pasta</h3>
+                                <span class="menu-item-price">₹380</span>
+                            </div>
+                            <p class="menu-item-description">Penne pasta tossed with fresh vegetables, marinara sauce, and parmesan cheese.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 450 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="veg-pasta-001"
+                                        data-name="Veg Pasta"
+                                        data-price="380"
+                                        data-category="mains"
+                                        data-image="https://www.budgetbytes.com/wp-content/uploads/2021/10/One-Pot-Veggie-Pasta-bowl-500x500.jpg">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desserts -->
+                    <div class="menu-item" data-category="desserts" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAiXYrVVskpU9gwukqhF5k1vEhU0O7fx8TQA&s" alt="Tiramisu">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-chef-choice">Chef's Choice</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Classic Tiramisu</h3>
+                                <span class="menu-item-price">₹280</span>
+                            </div>
+                            <p class="menu-item-description">Layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 380 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="tiramisu-001"
+                                        data-name="Classic Tiramisu"
+                                        data-price="280"
+                                        data-category="desserts"
+                                        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAiXYrVVskpU9gwukqhF5k1vEhU0O7fx8TQA&s">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-item-image">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2024/5/416116214/ZW/QX/PC/132900754/chocolava-cake-500x500.jpeg" alt="Chocolate Lava Cake">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Chocolate Lava Cake</h3>
+                                <span class="menu-item-price">₹320</span>
+                            </div>
+                            <p class="menu-item-description">Warm chocolate cake with a molten center, served with vanilla ice cream.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 450 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="lava-001"
+                                        data-name="Chocolate Lava Cake"
+                                        data-price="320"
+                                        data-category="desserts"
+                                        data-image="https://5.imimg.com/data5/SELLER/Default/2024/5/416116214/ZW/QX/PC/132900754/chocolava-cake-500x500.jpeg">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-item-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-oijkLzoXthgbfwHeoJvaMCHCvOM-QLFOQ&s" alt="Cheesecake">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">New York Cheesecake</h3>
+                                <span class="menu-item-price">₹300</span>
+                            </div>
+                            <p class="menu-item-description">Creamy cheesecake with a graham cracker crust and berry compote.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 420 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="cheesecake-001"
+                                        data-name="New York Cheesecake"
+                                        data-price="300"
+                                        data-category="desserts"
+                                        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-oijkLzoXthgbfwHeoJvaMCHCvOM-QLFOQ&s">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=300&fit=crop" alt="Chocolate Cake">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-popular">Popular</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Dark Chocolate Cake</h3>
+                                <span class="menu-item-price">₹280</span>
+                            </div>
+                            <p class="menu-item-description">Rich chocolate layers with ganache frosting and chocolate shavings.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 480 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="chocolate-cake-001"
+                                        data-name="Dark Chocolate Cake"
+                                        data-price="280"
+                                        data-category="desserts"
+                                        data-image="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-item-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDG1oP97W7_IkvlUNNOXuE8QvN4zaWOuyjkQ&s" alt="Macarons">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-new">New</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">French Macarons</h3>
+                                <span class="menu-item-price">₹180</span>
+                            </div>
+                            <p class="menu-item-description">Assorted flavors - raspberry, pistachio, lemon, and chocolate.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 120 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="macarons-001"
+                                        data-name="French Macarons"
+                                        data-price="180"
+                                        data-category="desserts"
+                                        data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDG1oP97W7_IkvlUNNOXuE8QvN4zaWOuyjkQ&s">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-item-image">
+                            <img src="https://m.media-amazon.com/images/I/7138FNJvBfL._AC_UF894,1000_QL80_.jpg" alt="Ice Cream">
+                            <div class="menu-item-badges">
+                                <span class="badge badge-vegetarian">Veg</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Artisan Ice Cream</h3>
+                                <span class="menu-item-price">₹150</span>
+                            </div>
+                            <p class="menu-item-description">Premium ice cream with flavors of your choice - vanilla, chocolate, or strawberry.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-calories"><i class="fas fa-fire"></i> 200 kcal</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="ice-cream-001"
+                                        data-name="Artisan Ice Cream"
+                                        data-price="150"
+                                        data-category="desserts"
+                                        data-image="https://m.media-amazon.com/images/I/7138FNJvBfL._AC_UF894,1000_QL80_.jpg">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section bg-cream">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <h2>Have a Special Request?</h2>
+                    <p class="mb-6">We accommodate dietary restrictions and special occasions. Let us know how we can make your visit special.</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <i class="fas fa-mug-hot"></i>
+                            <span>Brew Bliss</span>
+                        </a>
+                        <p class="footer-description">Where warmth meets flavor. Experience the perfect blend of artisanal coffee and gourmet cuisine.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+                            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="reservation.html"><i class="fas fa-chevron-right"></i> Reservations</a></li>
+                            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 MG Road, Mumbai,<br>Maharashtra 400001</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hello@brewblisscafe.com">hello@brewblisscafe.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Sun: 8:00 AM - 10:00 PM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe for exclusive offers</p>
+                        <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Thank you for subscribing!', 'success');">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p class="footer-copyright">
+                        &copy; 2025 Brew Bliss Café. All rights reserved.
+                    </p>
+                    <ul class="footer-bottom-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/menu-cart-integrated.js"></script>
+</body>
+</html>
