@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brew Bliss Café - Experience the finest coffee and cuisine in a warm, inviting atmosphere. Book your table today.">
+    <meta name="theme-color" content="#8B4513">
+    <title>Brew Bliss Café - Fine Dining & Coffee Experience</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css?v=2">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header-transparent">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <i class="fas fa-mug-hot"></i>
+                <span>Brew Bliss</span>
+            </a>
+            
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="reservation.html" class="nav-link">Reservation</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="mobile-nav-footer d-lg-none">
+                    <div class="mobile-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="header-actions">
+                <!-- Cart Link -->
+                <a href="cart.html" class="cart-link" aria-label="View Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+                
+                <!-- Auth Link -->
+                <a href="login.html" class="cart-link auth-link" aria-label="Login">
+                    <i class="fas fa-user"></i>
+                </a>
+                
+                <!-- Dark Mode Toggle -->
+                <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon icon-moon"></i>
+                    <i class="fas fa-sun icon-sun"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="header-toggle d-lg-none" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-image-bg"></div>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content" data-aos="fade-up">
+                <p class="hero-subtitle">Welcome to</p>
+                <h1 class="hero-title">Brew Bliss Café</h1>
+                <p class="hero-description">Where every cup tells a story and every dish is crafted with passion. Experience the perfect blend of flavors in a warm, inviting atmosphere.</p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary btn-lg">Explore Menu</a>
+                    <a href="reservation.html" class="btn btn-outline-light btn-lg">Book a Table</a>
+                </div>
+            </div>
+            
+            <a href="#featured" class="hero-scroll">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- Featured Menu Section -->
+        <section id="featured" class="section bg-white">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Chef's Specials</h2>
+                    <p>Discover our most loved dishes, carefully crafted by our expert chefs using the finest ingredients.</p>
+                </div>
+                
+                <div class="featured-grid">
+                    <!-- Featured Item 1 -->
+                    <div class="card card-hover" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=500&h=300&fit=crop" alt="Signature Cappuccino">
+                            <span class="badge badge-chef-choice">Chef's Choice</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Signature Cappuccino</h3>
+                            <p class="card-text">Rich espresso topped with silky steamed milk and artistic latte art.</p>
+                            <div class="flex-between">
+                                <span class="card-price">₹180</span>
+                                <button class="btn btn-primary btn-sm add-to-cart" 
+                                        data-id="cappuccino-001"
+                                        data-name="Signature Cappuccino" 
+                                        data-price="180"
+                                        data-image="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Item 2 -->
+                    <div class="card card-hover" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&h=300&fit=crop" alt="Truffle Mushroom Pizza">
+                            <span class="badge badge-new">New</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Truffle Mushroom Pizza</h3>
+                            <p class="card-text">Wood-fired pizza with wild mushrooms, truffle oil, and mozzarella.</p>
+                            <div class="flex-between">
+                                <span class="card-price">₹450</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="pizza-001"
+                                        data-name="Truffle Mushroom Pizza"
+                                        data-price="450"
+                                        data-image="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Item 3 -->
+                    <div class="card card-hover" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&h=300&fit=crop" alt="Belgian Waffles">
+                            <span class="badge badge-popular">Popular</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Belgian Waffles</h3>
+                            <p class="card-text">Crispy waffles served with fresh berries, whipped cream, and maple syrup.</p>
+                            <div class="flex-between">
+                                <span class="card-price">₹280</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="waffles-001"
+                                        data-name="Belgian Waffles"
+                                        data-price="280"
+                                        data-image="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Item 4 -->
+                    <div class="card card-hover" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&h=300&fit=crop" alt="Iced Caramel Latte">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Iced Caramel Latte</h3>
+                            <p class="card-text">Chilled espresso with caramel syrup, milk, and ice. Perfect for summer.</p>
+                            <div class="flex-between">
+                                <span class="card-price">₹220</span>
+                                <button class="btn btn-primary btn-sm add-to-cart"
+                                        data-id="latte-001"
+                                        data-name="Iced Caramel Latte"
+                                        data-price="220"
+                                        data-image="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=300&h=300&fit=crop">
+                                    <i class="fas fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8" data-aos="fade-up">
+                    <a href="menu.html" class="btn btn-outline-primary btn-lg">View Full Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Teaser Section -->
+        <section class="section about-teaser">
+            <div class="container">
+                <div class="about-teaser-grid">
+                    <div class="about-teaser-images" data-aos="fade-right">
+                        <div class="main-image">
+                            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=600&fit=crop" alt="Cafe Interior">
+                        </div>
+                        <div class="experience-badge">
+                            <span class="years">5+</span>
+                            <span class="text">Years of<br>Excellence</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-teaser-content" data-aos="fade-left">
+                        <span class="section-label">Our Story</span>
+                        <h2>A Legacy of Flavor & Warmth</h2>
+                        <p class="lead">Since 2019, Brew Bliss Café has been serving the community with passion, creating memorable dining experiences one cup at a time.</p>
+                        <p>Our journey began with a simple dream: to create a space where exceptional coffee meets culinary artistry. Every dish we serve and every cup we brew reflects our commitment to quality and our love for bringing people together.</p>
+                        
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Premium organic coffee beans</li>
+                            <li><i class="fas fa-check"></i> Locally sourced fresh ingredients</li>
+                            <li><i class="fas fa-check"></i> Award-winning culinary team</li>
+                            <li><i class="fas fa-check"></i> Sustainable & eco-friendly practices</li>
+                        </ul>
+                        
+                        <a href="about.html" class="btn btn-primary">Read Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section testimonials">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>What Our Guests Say</h2>
+                    <p>Real experiences from our beloved customers</p>
+                </div>
+                
+                <div class="testimonial-slider" data-aos="fade-up">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-item active">
+                        <p class="testimonial-quote">The ambiance is absolutely magical, and the coffee is the best I've had in Mumbai. Brew Bliss has become my second home for weekend brunches.</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face" alt="Priya Sharma">
+                            <div class="author-info">
+                                <h4 class="author-name">Priya Sharma</h4>
+                                <span class="author-title">Food Blogger</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item" style="display: none;">
+                        <p class="testimonial-quote">From the artisanal coffee to the gourmet dishes, everything here speaks of quality and passion. The staff makes you feel like family.</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Rahul Mehta">
+                            <div class="author-info">
+                                <h4 class="author-name">Rahul Mehta</h4>
+                                <span class="author-title">Regular Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-item" style="display: none;">
+                        <p class="testimonial-quote">Celebrated my anniversary here and it was perfect. The attention to detail, the food, the service - everything was exceptional!</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face" alt="Anita & Vikram">
+                            <div class="author-info">
+                                <h4 class="author-name">Anita & Vikram</h4>
+                                <span class="author-title">Happy Couple</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slider Navigation -->
+                    <div class="slider-nav">
+                        <button class="slider-prev" aria-label="Previous testimonial">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="slider-next" aria-label="Next testimonial">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation CTA Section -->
+        <section class="reservation-cta">
+            <div class="container">
+                <div class="cta-content" data-aos="zoom-in">
+                    <h2>Reserve Your Table</h2>
+                    <p>Join us for an unforgettable dining experience. Whether it's a casual brunch or a special celebration, we'd love to host you.</p>
+                    <a href="reservation.html" class="btn btn-primary btn-lg">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Feed Section -->
+        <section class="section bg-white">
+            <div class="container">
+                <div class="instagram-header" data-aos="fade-up">
+                    <a href="https://instagram.com" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                        <span>@brewblisscafe</span>
+                    </a>
+                    <p>Follow us for daily updates and behind-the-scenes moments</p>
+                </div>
+                
+                <div class="instagram-grid" data-aos="fade-up">
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=400&fit=crop" alt="Instagram Post">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=400&fit=crop" alt="Instagram Post">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=400&fit=crop" alt="Instagram Post">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=400&h=400&fit=crop" alt="Instagram Post">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400&h=400&fit=crop" alt="Instagram Post">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="instagram-item">
+                        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=400&h=400&fit=crop" alt="Instagram Post">
+                        <div class="instagram-overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Brand Column -->
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <i class="fas fa-mug-hot"></i>
+                            <span>Brew Bliss</span>
+                        </a>
+                        <p class="footer-description">Where warmth meets flavor. Experience the perfect blend of artisanal coffee and gourmet cuisine in a cozy, welcoming atmosphere.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="menu.html"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+                            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="reservation.html"><i class="fas fa-chevron-right"></i> Reservations</a></li>
+                            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 MG Road, Mumbai,<br>Maharashtra 400001</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hello@brewblisscafe.com">hello@brewblisscafe.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Sun: 8:00 AM - 10:00 PM</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter -->
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe for exclusive offers and updates</p>
+                        <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Thank you for subscribing!', 'success');">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p class="footer-copyright">
+                        &copy; 2025 Brew Bliss Café. All rights reserved. Designed with <i class="fas fa-heart" style="color: var(--danger);"></i> for food lovers.
+                    </p>
+                    <ul class="footer-bottom-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
+    <script src="assets/js/menu-cart-integrated.js"></script>
+</body>
+</html>
